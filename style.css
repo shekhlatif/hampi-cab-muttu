@@ -1,0 +1,1295 @@
+body{
+margin:0;
+font-family:Arial;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#111;
+color:white;
+}
+
+.logo{
+font-size:20px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+}
+
+.hamburger{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* background image in hero*/
+/* HERO SECTION */
+
+.hero{
+height:90vh;
+background-image: url("images/hampi-hero.jpg"); /* your image path */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+position:relative;
+}
+
+
+
+/* hero css*/
+.hero{
+position:relative;
+height:90vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+overflow:hidden;
+}
+
+/* HERO IMAGE */
+
+.hero-img{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-1;
+}
+
+/* DARK OVERLAY */
+
+.hero::after{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+/* TEXT */
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+/* BUTTON */
+
+.hero-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:orange;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+/* inttro page */
+/* INTRO SECTION */
+
+.intro{
+padding:80px 20px;
+background:#f7f7f7;
+display:flex;
+justify-content:center;
+}
+
+.intro-container{
+max-width:900px;
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.intro h2{
+font-size:32px;
+margin-bottom:20px;
+color:#333;
+}
+
+.intro-text{
+font-size:18px;
+line-height:1.7;
+color:#555;
+margin-bottom:30px;
+}
+
+/* FEATURES */
+
+.intro-features{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.feature{
+background:#ff9800;
+color:white;
+padding:10px 18px;
+border-radius:25px;
+font-weight:500;
+}
+
+
+/* why u choose us*/
+/* WHY CHOOSE US SECTION */
+
+.why{
+padding:80px 20px;
+background:#f9f9f9;
+text-align:center;
+}
+
+.section-title{
+font-size:32px;
+margin-bottom:40px;
+color:#333;
+}
+
+.why-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.why-card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.why-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+.why-icon{
+font-size:35px;
+margin-bottom:15px;
+}
+
+.why-card h3{
+margin-bottom:10px;
+color:#222;
+}
+
+.why-card p{
+color:#666;
+line-height:1.6;
+}
+
+/* fro hero section logo*/
+.hero-content{
+text-align:center;
+}
+
+.hero-logo{
+width:120px;
+margin-bottom:20px;
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+/* for circular logo */
+.hero-logo{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:0 auto 20px auto;
+border:4px solid white;
+box-shadow:0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* explore more section*/
+/* EXPLORE MORE SECTION */
+
+.explore-more{
+padding:80px 20px;
+background:#f3f3f3;
+text-align:center;
+}
+
+.explore-title{
+font-size:32px;
+margin-bottom:40px;
+color:#333;
+}
+
+.explore-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+max-width:1000px;
+margin:auto;
+}
+
+.explore-card{
+background:white;
+padding:35px;
+border-radius:12px;
+text-decoration:none;
+color:#333;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.explore-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+background:#ff9800;
+color:white;
+}
+
+.explore-icon{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.explore-card h3{
+margin-bottom:10px;
+}
+
+.explore-card p{
+font-size:15px;
+line-height:1.5;
+}
+
+
+/* dark overlay for better text visibility */
+
+.hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(129, 120, 120, 0.241);
+}
+
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+}
+
+.hero-btn{
+display:inline-block;
+margin-top:15px;
+padding:12px 25px;
+background:orange;
+color:white;
+text-decoration:none;
+border-radius:5px;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:url('../images/hampi.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+}
+
+.hero-btn{
+background:orange;
+padding:12px 25px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* INTRO */
+
+.intro{
+padding:60px 20px;
+text-align:center;
+}
+
+/* WHY */
+
+.why{
+padding:60px 20px;
+background:#f5f5f5;
+text-align:center;
+}
+
+.why-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.why-box{
+background:white;
+padding:20px;
+width:200px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* TOURS */
+
+.tours{
+padding:60px 20px;
+text-align:center;
+}
+
+.tour-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.tour-card{
+width:280px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+.tour-card img{
+width:100%;
+}
+
+.tour-btn{
+display:block;
+background:orange;
+color:white;
+padding:10px;
+text-decoration:none;
+}
+
+/* NAV BUTTONS */
+
+.navigation{
+text-align:center;
+padding:60px;
+background:#eee;
+}
+
+.nav-btn{
+background:black;
+color:white;
+padding:12px 25px;
+margin:10px;
+display:inline-block;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* FLOAT BUTTONS */
+
+.call-btn{
+position:fixed;
+bottom:80px;
+right:20px;
+background:#08ee6b;
+color:white;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+text-decoration:none;
+}
+
+.whatsapp-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#0fd859;
+color:white;
+width:55px;
+height:55px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:24px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+.footer{
+background:#111;
+color:white;
+padding:50px 20px 20px;
+}
+
+.footer-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+max-width:1100px;
+margin:auto;
+gap:30px;
+}
+
+.footer-brand h2{
+margin-bottom:10px;
+color:#ff9800;
+}
+
+.footer-brand p{
+color:#ccc;
+max-width:350px;
+}
+
+.footer-contact h3{
+margin-bottom:10px;
+color:#ff9800;
+}
+
+.footer-contact p{
+color:#ccc;
+}
+
+.footer-design{
+align-self:center;
+}
+
+.footer-design a{
+color:#ff9800;
+text-decoration:none;
+font-weight:bold;
+}
+
+.footer-design a:hover{
+text-decoration:underline;
+}
+
+.footer-bottom{
+text-align:center;
+border-top:1px solid #333;
+margin-top:30px;
+padding-top:15px;
+color:#aaa;
+}
+
+
+/* background colors*/
+.intro-section{
+background:#ffffff;
+}
+
+.why-section{
+background:#f7f7f7;
+}
+
+.tours{
+background:#ffffff;
+}
+
+.explore-section{
+background:#f3f3f3;
+}
+
+.map-section{
+background:#fafafa;
+}
+
+/* for about page*/
+/* ABOUT HERO */
+
+.about-hero{
+background:#111;
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+/* ABOUT SECTION */
+
+.about-section{
+padding:70px 20px;
+background:#f5f5f5;
+text-align:center;
+}
+
+.about-container{
+max-width:900px;
+margin:auto;
+line-height:1.7;
+}
+
+
+/* SERVICES */
+
+.about-services{
+padding:70px 20px;
+text-align:center;
+}
+
+.service-container{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+}
+
+.service-card{
+background:white;
+padding:25px;
+width:260px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.vehicle-gallery{
+padding:80px 20px;
+text-align:center;
+background:#f9f9f9;
+}
+
+.vehicle-container{
+display:grid;
+grid-template-columns:1fr 1fr; /* 2 columns */
+gap:20px;
+max-width:800px;
+margin:auto;
+}
+
+.vehicle-container img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.vehicle-container img:hover{
+transform:scale(1.05);
+}
+
+.vehicle-gallery{
+padding:80px 20px;
+text-align:center;
+background:#f9f9f9;
+}
+
+.vehicle-container{
+display:grid;
+grid-template-columns:repeat(2, 1fr); /* 2 columns */
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.vehicle-container img{
+width:100%;
+height:230px;
+object-fit:cover;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.vehicle-container img:hover{
+transform:scale(1.05);
+}
+/* IMAGE POPUP */
+
+.image-popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.image-popup img{
+max-width:90%;
+max-height:90%;
+}
+
+.close-btn{
+position:absolute;
+top:20px;
+right:40px;
+font-size:30px;
+color:white;
+cursor:pointer;
+}
+
+
+/* VEHICLE GALLERY */
+
+.vehicle-gallery{
+padding:80px 20px;
+text-align:center;
+background:#f9f9f9;
+}
+
+.vehicle-container{
+display:flex;
+flex-wrap:wrap;
+gap:25px;
+justify-content:center;
+}
+
+.vehicle-card{
+width:300px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.vehicle-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+cursor:pointer;
+}
+
+.vehicle-card h3{
+padding:15px;
+}
+
+/* IMAGE POPUP */
+
+.image-popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.image-popup img{
+max-width:90%;
+max-height:90%;
+}
+
+.close-btn{
+position:absolute;
+top:20px;
+right:40px;
+font-size:30px;
+color:white;
+cursor:pointer;
+}
+
+
+/* SERVICE AREA */
+
+.service-area{
+padding:70px 20px;
+background:#f9f9f9;
+text-align:center;
+}
+
+.area-list span{
+display:inline-block;
+background:#ff9800;
+color:white;
+padding:10px 18px;
+margin:10px;
+border-radius:20px;
+}
+
+
+/* EXPERIENCE */
+
+.experience{
+padding:70px 20px;
+text-align:center;
+}
+
+.about-hero{
+height:60vh;
+
+background-image: url("https://lh3.googleusercontent.com/p/AF1QipPNg3Wrl8nJRb6aq7L0YRoYYUcnaVXFshBYeW3P=w243-h304-n-k-no-nu");
+
+background-size:cover;
+background-position:center;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+color:white;
+text-align:center;
+
+position:relative;
+}
+
+.about-hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.about-hero h1,
+.about-hero p{
+position:relative;
+z-index:2;
+}
+
+/* CONTACT */
+
+.about-contact{
+padding:70px 20px;
+background:#f5f5f5;
+text-align:center;
+}
+
+.contact-btn{
+display:inline-block;
+margin-top:15px;
+background:#25D366;
+color:white;
+padding:12px 25px;
+text-decoration:none;
+border-radius:5px;
+}
+
+/* MAP SECTION */
+
+.map-section{
+padding:55px 55px;
+text-align:center;
+background:#f5f5f5;
+}
+
+.map-title{
+font-size:32px;
+margin-bottom:30px;
+color:#333;
+}
+
+.map-container{
+max-width:1100px;
+margin:auto;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* BOOKING HERO */
+
+.booking-hero{
+background:#164417;
+color:white;
+text-align:center;
+padding:10px 20px;
+}
+
+.call-btn{
+
+position:fixed;
+bottom:80px;
+right:20px;
+
+background:#007bff;
+color:white;
+
+width:55px;
+height:55px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:24px;
+text-decoration:none;
+
+z-index:9999;
+
+}
+
+.whatsapp-btn{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:#25D366;
+color:white;
+
+width:55px;
+height:55px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:24px;
+text-decoration:none;
+
+z-index:9999;
+
+}
+
+
+
+/* call book button */
+.call-book-btn{
+
+display:block;
+
+background:#007bff;
+color:white;
+
+text-decoration:none;
+
+padding:14px;
+margin-top:10px;
+
+border-radius:5px;
+
+font-size:18px;
+
+text-align:center;
+
+}
+
+.call-book-btn:hover{
+background:#0056b3;
+}
+
+/* BOOKING FORM SECTION */
+
+.booking-section{
+padding:80px 20px;
+background:#f5f5f5;
+}
+
+.booking-section{
+
+background-image: url("https://lh3.googleusercontent.com/p/AF1QipPcLkm0bcic9IpIJI4-DDt4u3GB3owfkNRYeGru=w243-h174-n-k-no-nu");
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+padding:80px 20px;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+position:relative;
+
+}
+.booking-section::before{
+
+content:"";
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.5);
+
+}
+
+
+.booking-container{
+
+position:relative;
+z-index:2;
+
+max-width:500px;
+margin:auto;
+
+background:white;
+padding:40px;
+
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+
+}
+
+.booking-container{
+max-width:500px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.booking-container h2{
+margin-bottom:30px;
+}
+
+.booking-container input,
+.booking-container select,
+.booking-container textarea{
+
+width:100%;
+padding:12px;
+margin-bottom:15px;
+
+border:1px solid #ddd;
+border-radius:5px;
+
+font-size:16px;
+}
+
+.booking-container textarea{
+height:100px;
+}
+
+
+/* BOOK BUTTON */
+
+.book-btn{
+
+background:#25D366;
+color:white;
+border:none;
+
+padding:14px;
+width:100%;
+
+font-size:18px;
+border-radius:5px;
+
+cursor:pointer;
+
+}
+
+.book-btn:hover{
+background:#1ebc59;
+}
+
+body{
+margin:0;
+font-family:Arial, sans-serif;
+}
+
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+background:#111;
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 10px;
+}
+
+
+/* HERO */
+
+.services-hero{
+
+
+background-size:cover;
+background-position:center;
+
+padding:12px 20px;
+
+text-align:center;
+color:rgb(177, 17, 17);
+
+}
+
+
+/* SERVICES */
+
+.services-section{
+padding:80px 20px;
+background:#f5f5f5;
+text-align:center;
+}
+
+.services-container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+max-width:1100px;
+margin:auto;
+
+}
+
+.service-card{
+
+background:white;
+padding:30px;
+border-radius:10px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+.service-card:hover{
+transform:translateY(-8px);
+}
+
+
+/* AREA */
+
+.area-section{
+padding:70px 20px;
+text-align:center;
+}
+
+.area-list span{
+
+display:inline-block;
+
+background:#ff9800;
+color:white;
+
+padding:10px 18px;
+margin:10px;
+
+border-radius:20px;
+
+}
+
+
+/* CTA */
+
+.cta-section{
+
+padding:80px 20px;
+background:#48855d;
+color:white;
+text-align:center;
+
+}
+
+.cta-btn{
+
+display:inline-block;
+margin-top:20px;
+
+background:#25D366;
+color:white;
+
+padding:14px 30px;
+
+text-decoration:none;
+border-radius:5px;
+
+font-size:18px;
+
+}
+
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+
+/* FLOATING BUTTONS */
+
+.call-btn{
+
+position:fixed;
+bottom:80px;
+right:20px;
+
+background:#08e464;
+color:white;
+
+width:55px;
+height:55px;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-size:24px;
+text-decoration:none;
+
+z-index:9999;
+
+}
+
+.whatsapp-btn{
+position: fixed;
+bottom: 20px;
+right: 20px;
+
+background: #25D366;
+width: 55px;
+height: 55px;
+
+border-radius: 50%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+text-decoration: none;
+z-index: 9999;
+}
+
+.whatsapp-btn img{
+width:28px;
+height:28px;
+}
+
+
+
+/*explore page */
+.explore{
+padding:60px;
+text-align:center;
+}
+
+.card-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+margin-top:40px;
+}
+
+.place-card{
+background:white;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+text-decoration:none;
+color:black;
+transition:0.3s;
+overflow:hidden;
+}
+
+.place-card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.place-card h3{
+margin:15px;
+}
+
+.place-card p{
+margin:0 15px 20px;
+font-size:14px;
+}
+
+.place-card:hover{
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+} 
+
+/* MOBILE MENU */
+
+@media(max-width:768px){
+
+nav{
+display:none;
+flex-direction:column;
+background:#111;
+position:absolute;
+top:60px;
+left:0;
+width:100%;
+}
+
+nav a{
+padding:15px;
+border-top:1px solid #333;
+}
+
+nav.active{
+display:flex;
+}
+
+.hamburger{
+display:block;
+}
+
+}
